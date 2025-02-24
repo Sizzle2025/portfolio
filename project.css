@@ -1,0 +1,196 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.navv{
+    width: 100%;
+    margin: 0!important;
+    height: 70px;
+    background-color: black;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+}
+.navlef{
+    width: 35%;
+    height: 100%;
+    color: white;
+    align-content: center;
+    padding-left: 20px;
+}
+.navrigh{
+    width: 65%;
+    height: 100%;
+    color: white;
+    padding-right: 50px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 40px;
+    font-size: 20px;
+}
+.navrigh a{
+    border-bottom: 0px solid aqua;  
+    transition: all;   
+}
+.navrigh a:hover{
+    border-width: 4px;
+}
+.contactf{
+    background-color: black!important;
+    min-height: 100vh!important;
+    width: 100%!important;
+    padding-top: 80px!important;
+    padding-bottom: 100px!important;
+}
+.contactf h1{
+    font-size: 75px!important;
+    color: green;
+}
+.proo{ 
+    height: 350px!important;
+    width: 300px!important;
+    border-radius: 20px!important;
+    background-color: aliceblue;
+}
+.pro{
+    /* padding-left: 160px!important; */
+    padding-top: 60px!important;
+    gap: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .prow2{
+    padding-left: 160px!important;
+    padding-top: 60px!important;
+    gap: 50px!important;
+} */
+.pro1{
+    background-color: rgb(29, 25, 25);
+    background-size: 300px 350px;
+    filter: brightness(75%);
+    
+}
+.pro2{
+    background-color: rgb(29, 25, 25);
+    background-size: 300px 350px;
+    filter: brightness(75%);
+}
+.pro3{
+    background-color: rgb(29, 25, 25);
+    background-size: 300px 350px;
+    filter: brightness(75%);
+}
+.pro4{
+    background-color: rgb(29, 25, 25);
+    background-size: 300px 350px;
+    filter: brightness(75%);
+}
+.pro5{
+    background-color: rgb(29, 25, 25);
+    background-size: 300px 350px;
+    filter: brightness(75%);
+}
+.pro6{
+    background-color: rgb(29, 25, 25);
+    background-size: 300px 350px;
+    filter: brightness(75%);
+}
+.proo:hover{
+    box-shadow: 0px 0px 20px green;
+    transform: skewX(1deg);
+    cursor: pointer;
+}
+.top h2{
+    color:green;
+    align-content: center;
+}
+.topi img{
+    height: 180px;
+    width: 250px;
+    border-radius: 20px;
+}
+.topi b{
+    font-size: 16px;
+    color: white!important;
+}
+
+.cont{
+    font-size: 20px;
+}
+.cont i{
+    color: green;
+    height: 40px;
+    width: 40px;
+    font-size: 24px;
+    background-color: rgb(56, 54, 54);
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+    margin-left: 8px;
+}
+.cont i:hover{
+    background-color: white;
+    cursor: pointer;
+}
+.navv input{
+    display: none;
+}
+.navlef .mbar{
+    display: none;
+}
+
+
+
+@media only screen and (max-width:400px) {
+    .contactf h1{
+        font-size: 50px!important;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .navv{
+        flex-direction: column;
+        padding: 30px;
+    }
+    .navlef{
+        width: 100%;
+        padding-left: 30px!important;
+        padding-top: 20px!important;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 60px;
+    }
+    .navlef i{
+        font-size: 34px!important;
+        margin-right: 30px!important;
+    }
+    .navrigh{
+        background-color: rgb(1, 100, 1);
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        padding-top: 0px;
+        padding: 30px;
+        border-radius: 20px;
+        height: 200px!important;
+        align-items: start;
+        justify-content: end !important;
+        gap: 10px;
+        position: absolute;
+        right: -200px;
+        top: 90px;
+        opacity: 0;
+        transition: 1s all;
+    }
+    .navlef .mbar{
+        display: block;
+    }
+    input:checked~.navrigh{
+        opacity: 1;
+        right: 20px;
+    }
+}

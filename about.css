@@ -1,0 +1,297 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.ab{
+    margin: 0!important;
+    background-color: black!important;
+    min-height: 400px;
+    width: 100%;
+}
+.navv{
+    width: 100%!important;
+    margin: 0!important;
+    height: 70px;
+    background-color: black;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+}
+.navlef{
+    width: 35%;
+    height: 100%;
+    color: white;
+    align-content: center;
+    padding-left: 20px;
+}
+.navlef .mbar{
+    display: none;
+}
+.navrigh{
+    width: 65%;
+    height: 100%;
+    color: white;
+    padding-right: 50px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 40px;
+    font-size: 20px;
+}
+.navrigh a{
+    border-bottom: 0px solid aqua;  
+    transition: all;   
+}
+.navrigh a:hover{
+    border-width: 4px;
+}
+.con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+.co{
+    width: 50%;
+}
+.skill{
+    width: 100%!important;
+    padding-top: 30px;
+    padding-left: 40px;
+}
+.his{
+    width: 100%!important;
+    margin: 0%!important;
+}
+.mid{
+    margin-left: 100px;
+    margin-top: 5px;
+    font-size: 24px;
+    margin-bottom: 5px;
+    min-height: 30px;
+    background-color: rgb(41, 38, 38);
+}
+.det{
+    padding-top: 80px!important;
+    padding-left: 40px!important;
+    background-color: black!important;
+    width: 65%;
+    min-height: 500px;
+    float: left;
+    padding-bottom: 56px!important;
+}
+.det h3{
+ font-size: 40px!important;
+ color: green;
+}
+.det p{
+    font-size: 26px!important;
+    margin-bottom: 44px;
+}
+.det b{
+    font-size: 20px!important;
+}
+.detpic{
+    min-height: 518px!important;
+    width: 35%;
+    background-color:black;
+    float: left;
+    display: flex;
+}
+.me{
+    min-height: 518px;
+    width: 115%;
+    opacity: 0;
+    animation-name: sa;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes sa {
+        from{
+            transform: scale(2);
+            opacity: 1;
+        }
+        to{
+            opacity: 1;
+        }
+}
+.skill{
+    background-color: black!important;
+}
+.markk{
+    height: 20px;
+    background-color: white;
+    border-radius: 9px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.mar{
+    height: 20px;
+    width: 10px;
+    border-radius: 9px;
+    background-color: rgb(124, 241, 124);
+    animation-name: mark;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.mak1{
+    animation-name: mak1;
+}
+.mak2{
+    animation-name: mak2;
+}
+.mak3{
+    animation-name: mak3;
+}.mak4{
+    animation-name: mak4;
+}.mak5{
+    animation-name: mak5;
+}
+@keyframes mark {
+    to{
+        width: 97%;
+    }
+}
+@keyframes mak1 {
+    to{
+        width:75%;
+    }
+}
+@keyframes mak2 {
+    to{
+        width: 85%;
+    }
+}
+@keyframes mak3 {
+    to{
+        width: 100%;
+    }
+}
+@keyframes mak4 {
+    to{
+        width: 75%;
+    }
+}
+@keyframes mak5 {
+    to{
+        width: 50%;
+    }
+}
+.edu b{
+    font-size: 24px!important;
+    color: rgb(92, 216, 92)!important;
+    margin-bottom: 10px!important;
+}
+.edu ul{
+    font-size: 18px!important;
+    margin-top: 20px;
+}
+.edu li{
+    margin-top: 15px;
+}
+.edu{
+    padding-top: 50px!important;
+}
+.edupic{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    bottom: 55px;
+    scale: .2;
+    opacity: 0;
+    animation: slow linear forwards ;
+    animation-range:entry ;
+    animation-timeline: view();
+    transition: 1000ms;
+}
+@keyframes slow {
+    to{
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+.cont{
+    font-size: 24px;
+}
+.cont i{
+    color: green;
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    background-color: rgb(56, 54, 54);
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+    margin-left: 8px;
+    margin-bottom: 20px;
+}
+.cont i:hover{
+    background-color: white;
+    cursor: pointer;
+}
+.cont p{
+    font-size: 16px!important;
+    color: grey;
+}
+.navv input{
+    display: none;
+}
+
+@media only screen and (max-width:1100px) {
+    .pers{
+        display: flex;
+        flex-direction:column;
+    }
+    .det,.detpic{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width:600px) {
+    .navv{
+        flex-direction: column;
+        padding: 30px;
+    }
+    .navlef{
+        width: 100%;
+        padding-left: 30px!important;
+        padding-top: 20px!important;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 60px;
+    }
+    .navlef i{
+        font-size: 34px!important;
+        margin-right: 30px!important;
+    }
+    
+    .navlef .mbar{
+        display: block;
+    }
+    .navrigh{
+        background-color: rgb(1, 100, 1);
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        padding-top: 0px;
+        padding: 30px;
+        border-radius: 20px;
+        height: 200px!important;
+        align-items: start;
+        justify-content: end !important;
+        gap: 10px;
+        position: absolute;
+        right: -200px;
+        top: 70px;
+        opacity: 0;
+        transition: 1s all;
+    }
+    input:checked~.navrigh{
+        opacity: 1;
+        right: 20px;
+    }
+}

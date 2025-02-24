@@ -1,0 +1,245 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container-fluid{
+    background-image: url(./WhatsApp\ Image\ 2024-11-12\ at\ 11.49.05\ AM.jpeg);
+    background-size: 1600px 755px;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+}
+img{
+    float: right;
+    height: 760px;
+    position: absolute;
+    bottom: 85px;
+    right: 0;
+    z-index: 999;
+    
+}
+.navv{
+    width: 90%;
+    height: 50px;
+    border-radius: 20px;
+    position: fixed;
+    top: 20px;
+    left: 60px;
+    z-index: 1;
+    display: flex;
+}
+.navlef{
+    width: 35%;
+    height: 100%;
+    color: white;
+    align-content: center;
+    padding-left: 20px;
+}
+.navrigh{
+    width: 65%;
+    height: 100%;
+    color: white;
+    padding-right: 50px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 40px;
+    font-size: 20px;
+}
+.navrigh a{
+    border-bottom: 0px solid aqua;  
+    transition: all;   
+}
+.navrigh a:hover{
+    border-width: 4px;
+}
+.nam{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    opacity: 0;
+    animation-name: sar;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.me{
+    height: 500px;
+    opacity: 0;
+    animation-name: sa;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes sa {
+    from{
+        transform: scale(2);
+        opacity: 1;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes sar {
+    from{
+        opacity: 1;
+        font-size: 100px;
+    }
+    to{
+        opacity: 1;
+        font-size: 50px;
+    }
+}
+.cont{
+    position: absolute;
+    bottom: 0;
+}
+.cont i{
+    color: green;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(56, 54, 54);
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+    margin-left: 8px;
+}
+.cont i:hover{
+    background-color: white;
+    cursor: pointer;
+}
+.navv input{
+    display: none;
+}
+.navlef .mbar{
+    display: none;
+}
+/* MEDIA QUERIES */
+
+@media only screen and (min-width:600px) and (max-width:920px) {
+    .navv{
+        flex-direction: column;
+        padding: 30px;
+    }
+    .navlef{
+        width: 100%;
+        padding-left: 30px!important;
+        padding-top: 20px!important;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 60px;
+    }
+    .navlef .mbar{
+        display: block;
+    }
+    .navlef i{
+        font-size: 34px!important;
+        margin-right: 30px!important;
+    }
+    .navrigh{
+        background-color: rgb(1, 100, 1);
+        display: flex;
+        flex-direction: column;
+        width: 140px;
+        padding-top: 0px;
+        padding: 30px;
+        border-radius: 20px;
+        height: 200px!important;
+        align-items: start;
+        justify-content: end !important;
+        gap: 10px;
+        position: absolute;
+        right: -200px;
+        top: 90px;
+        opacity: 0;
+        transition: 1s all;
+    }
+    input:checked~.navrigh{
+        opacity: 1;
+        right: 20px;
+    }
+
+    .me{
+        display: none;
+    }   
+    .cont{
+        height: 15%!important;       
+    }
+    .cont i{
+        height: 60px;
+        width: 60px;
+        font-size: 40px!important;
+    }
+    .cont{
+        display: none;
+    }
+}
+@media only screen and (max-width:600px){
+    .me{
+        display: none;
+    }
+    .cont{
+        display: none;
+    }
+    .navlef h3{
+        padding-left: 0px!important;
+        position: relative;
+        left: -80px;
+    }
+    .nam{
+        left: 50px;
+    }
+    .nam i{
+        margin-right: 10px;
+        height: 40px;
+        width: 40px;
+        font-size: 25px;
+    }
+    .nam b{
+        font-size: 30px;
+        margin-bottom: 0px!important;
+        margin-top: 0px!important;
+    }
+    .navv{
+        flex-direction: column;
+        padding: 30px;
+    }
+    .navlef{
+        width: 100%;
+        padding-left: 30px!important;
+        padding-top: 20px!important;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 60px;
+    }
+    
+    .navlef .mbar{
+        display: block;
+    }
+    .navlef i{
+        font-size: 34px!important;
+        margin-right: 30px!important;
+    }
+    .navrigh{
+        background-color: rgb(1, 100, 1);
+        display: flex;
+        flex-direction: column;
+        width: 140px;
+        padding-top: 0px;
+        padding: 30px;
+        border-radius: 20px;
+        height: 200px!important;
+        align-items: start;
+        justify-content: end !important;
+        gap: 10px;
+        position: absolute;
+        right: -200px;
+        top: 90px;
+        opacity: 0;
+        transition: 1s all;
+    }
+    input:checked~.navrigh{
+        opacity: 1;
+        right: 20px;
+    }
+
+}
